@@ -3,7 +3,10 @@ Compute djb2 hash using CLI. Good when scripting ..
 
 ## Build
 ```make```
-## Usage
-```./djb2 <<< <string>```
-or
-``` cat <file> | ./djb2```
+
+## Usage Examples
+```djb2 <<< <string>```
+
+```echo <string> | djb2```
+
+```cat <file> | djb2```
