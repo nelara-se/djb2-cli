@@ -19,12 +19,11 @@ main(int argc, char *argv[])
     char *buffer = NULL;
     ssize_t nread;
     size_t len;
-    
+
     while ((nread = getline(&buffer, &len, stdin)) != -1)
-    {
         fprintf(stdout, "%lu\n", hash(buffer));
-    }
 
     free(buffer);
+
     return EXIT_SUCCESS;
 }
